@@ -1,0 +1,35 @@
+#create repo localy
+#create remote repo 
+#in local repo open git bash 
+git init 
+git add .
+git commit -m ""
+git branch -M main 
+git remote add origin https://github.com/ahmed-elawady/newProject.git
+git push origin main 
+
+#create 2 new branch 
+git branch dev
+git branch test
+
+#change to dev branch
+git checkout dev
+
+#create 2 files
+touch file1.txt file2.txt
+
+#add files to git 
+git add .
+git commit -m ""
+
+#add chnges in dev branch to main branch 
+git checkout main 
+git merge dev 
+
+#push updates to remote repo 
+git push origin main
+
+
+
+
+
